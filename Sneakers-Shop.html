@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sneaker Store</title>
+        <style>
+            header{
+                background-color: black;
+                color: white;
+                text-align: center;
+                font-size: 25px;
+                border-radius: 30px;
+                padding: 15px;
+                margin: 20px;
+            }
+            h2{
+                background-color: black;
+                color: white;
+                text-align: center;
+                border-radius: 20px;
+                padding: 20px;
+            }
+            nav{
+                background-color: blue;
+                color: white;
+                text-align: center;
+                border-radius: 20px;
+                padding: 25px;
+                margin: 20px;
+            }
+            nav a{
+                background-color: blue;
+                color: white;
+                font-size: 20px;
+                padding: 20px;
+                margin: 20px;
+            }
+            .products{
+                display: flex;
+                justify-content:space-evenly;
+                flex-wrap: wrap;
+            }
+            .card{
+                background-color: white;
+                text-align: center;
+                position: relative;
+                width: 250px;
+                border-radius: 30px;
+                padding: 20px;
+                margin: 20px;
+                box-shadow:0px 5px 15px gray;
+            }
+            .card img{
+                width: 250px;
+                height: 250px;
+            }
+            .badge{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: red;
+                color: white;
+                border-radius: 30px;
+                padding: 20px;
+            }
+            .heart{
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                font-size: 25px;
+            }
+            .card:hover{
+                background-color: beige;
+                transform:scale(1.05);
+                transition:0.5s;
+            }
+            form{
+                background-color: white;
+                width: 500px;
+                border-radius: 30px;
+                padding: 20px;
+                margin: auto;
+                box-shadow:0px 5px 15px;
+            }
+            form:hover{
+                transform:scale(1.05);
+                transition:0.5s;
+            }
+            input,select{
+                font-size: 25px;
+                width: 80%;
+                padding: 20px;
+                margin: 20px;
+            }
+            button{
+                background-color: black;
+                color: white;
+                font-size: 15px;
+                border-radius: 20px;
+                padding: 20px;
+            }
+            button:hover{
+                background-color: blueviolet;
+                color: white;
+                transition:0.5s;
+            }
+            footer{
+                font-size: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Sneakers Store</h1>
+        </header>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">SHOES</a>
+            <a href="#">OFFERS</a>
+            <a href="#">CONTACT</a>
+        </nav>
+        <main>
+            <div class="products">
+                <div class="card">
+                    <div class="badge">SALE 50%✨</div>
+                    <div class="heart">❤️</div>
+                    <img src="shoes.png" alt="Nike Air Max">
+                    <h3>Nike Air Max</h3>
+                    <p>₹4,999</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="card">
+                    <div class="badge">NEW✨</div>
+                    <div class="heart">❤️</div>
+                    <img src="Shoes1.png" alt="Adidas Superstar">
+                    <h3>Adidas Superstar</h3>
+                    <p>₹5,499</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <br><br>
+            <form>
+                <h2>FILL THIS FORM</h2>
+                <label>NAME:</label>
+                <input type="text" placeholder="ENTER YOUR NAME">
+                <br><br>
+                <label>EMAIL:</label>
+                <input type="email" placeholder="ENTER YOUR EMAIL">
+                <label>Select Product:</label>
+                <select>
+                    <option>Nike Air Max</option>
+                    <option>Adidas Superstar</option>
+                </select>
+                <button type="submit">Order Now</button>
+            </form>
+        </main>
+        <footer>
+            © 2026 Sneakers Shop
+        </footer>
+    </body>
+</html>
